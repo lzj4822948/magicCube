@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Editor/Image Effects/CameraMotionBlurEditor.js">
+    <Files>
+      <File FileName="Assets/Standard Assets/Scripts/Utility Scripts/MeshCombineUtility.cs" Line="130" Column="59" />
+      <File FileName="Assets/Standard Assets/Scripts/Utility Scripts/CombineChildren.cs" Line="1" Column="1" />
+      <File FileName="Assets/NGUI/Scripts/Internal/NGUIText.cs" Line="226" Column="1" />
+      <File FileName="Assets/Editor/Image Effects/CameraMotionBlurEditor.js" Line="29" Column="53" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
