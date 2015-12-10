@@ -33,6 +33,8 @@ public class move : MonoBehaviour {
 	private bool isr;
 	private bool isu;
 	private bool isd;
+	private bool isRotate1 = false;
+// new vector3 abc;
 	
 	private bool isAuto;
 	public bool isPlay;
@@ -41,6 +43,8 @@ public class move : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//input_formula.text="fffd";
+		GameObject g = GameObject.Find("down_center");
+		Vector3 abc = g.transform.eulerAngles;
 		
 	}
 	void Awake()
@@ -66,7 +70,7 @@ public class move : MonoBehaviour {
 		
 	}
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		
 		if(isAuto){
 			
@@ -133,7 +137,7 @@ public class move : MonoBehaviour {
 		
 		
 		
-		if(isD)
+		if(Input.GetKey(KeyCode.A))
 		{
 
 			for(i=0;i<20;i++)
@@ -142,10 +146,35 @@ public class move : MonoBehaviour {
 				eight_point(1,down_center);
 				
 		    }
+		    isRotate1 = true;
 			
-			iTweenEvent.GetEvent(GameObject.Find("down_center"),"down").Play();
+			//iTweenEvent.GetEvent(GameObject.Find("down_center"),"down").Play();
+//			GameObject g = GameObject.Find("down_center");
+//			g.transform.Rotate(new Vector3(0, 1, 0) * 180 * Time.deltaTime);
+			//g.transform.rotation = Quaternion.Slerp(Quaternion.Euler (0f, 0f, 0f), Quaternion.Euler (0f, 90f, 0f),Time.deltaTime * 20.5f);
+
+			//g.GetComponent<Rigidbody>().MoveRotation (g.GetComponent<Rigidbody>().rotation * Quaternion.Euler (0f, 90f, 0f));
+
+////			if(!Input.anyKey)
+////			{    
+////				g.transform.eulerAngles = this.abc;
+////			}
+////			else
+////			{
+//				//float x=Input.GetAxis("Horizontal");
+//				float y=Input.GetAxis("Vertical");
+//				g.transform.Rotate(0,y*Time.deltaTime,0);
+////			}
 			isD=false;
-		 }
+			isenable=true;
+		}
+		if (isRotate1) {
+			GameObject g = GameObject.Find ("down_center");
+			g.transform.Rotate(new Vector3(0, 180 * Time.deltaTime, 0));
+			Debug.Log (g.transform.eulerAngles.y);
+			if(g.transform.eulerAngles.y > 90)
+				isRotate1 = false;
+		}
 		if(isd)
 		{
 

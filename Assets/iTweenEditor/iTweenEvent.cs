@@ -217,7 +217,9 @@ public class iTweenEvent : MonoBehaviour{
 		internalName = string.IsNullOrEmpty(tweenName) ? string.Empty : tweenName;
 		internalName = string.Format("{0}-{1}", internalName, System.Guid.NewGuid().ToString());
 		optionsHash.Add("name", internalName);
-		
+
+		string s33 = type.ToString ();
+		//Debug.Log ("type = %s", s33);
 		switch(type) {
 		case TweenType.AudioFrom:
 			iTween.AudioFrom(gameObject, optionsHash);
