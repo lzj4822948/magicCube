@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/MoveLi.cs">
+    <Files>
+      <File FileName="Assets/script/move.cs" Line="315" Column="27" />
+      <File FileName="Assets/iTweenEditor/iTweenEvent.cs" Line="36" Column="3" />
+      <File FileName="Assets/iTweenEditor/iTween.cs" Line="6565" Column="11" />
+      <File FileName="Assets/iTweenEditor/Helper Classes/EventParamMappings.cs" Line="31" Column="16" />
+      <File FileName="Assets/iTweenEditor/Helper Classes/Vector3OrTransform.cs" Line="23" Column="1" />
+      <File FileName="Assets/iTweenEditor/Helper Classes/Vector3OrTransformArray.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/MoveLi.cs" Line="43" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
